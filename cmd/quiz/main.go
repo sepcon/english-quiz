@@ -7,7 +7,7 @@ import (
 
 func main() {
 	NewQuizServer(":"+service_shared.CONST_QUIZ_SERVICE_PORT,
-		service_shared.CONST_QUIZ_GAME_ID, 4,
+		service_shared.CONST_QUIZ_GAME_ID, 10000,
 		scoring_sdk.NewScoringClient("http://localhost:"+service_shared.CONST_SCORING_SERVICE_PORT),
 	).Start()
 
